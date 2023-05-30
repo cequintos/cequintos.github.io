@@ -1,0 +1,35 @@
+title: Carlos Quintos Nores
+#logo: ./img/logo.jpg
+email: 90f0ad@gmail.com
+lang: es-ES
+description: Technician in Networked Computer Systems Administration / CFPM IC10 / IFC361_1
+favicon: true
+color-scheme: auto
+remote_theme: vaibhavvikas/jekyll-theme-minimalistic
+
+platforms:
+  - name: Resume
+    icon: <i class="fa-solid fa-file-lines"></i>
+    link: ./pdf/carlosquintos-cv.pdf
+  - name: Gitlab
+    icon: <i class="fa-brands fa-gitlab"></i>
+    link: https://gitlab.com/cequintos/
+  - name: LinkedIn
+    icon: <i class="fa-brands fa-linkedin"></i>
+    link: https://www.linkedin.com/in/cequintos/
+  - name: Twitter
+    icon: <i class="fa-brands fa-twitter"></i>
+    link: https://twitter.com/cequintos/
+  - name: Instagram
+    icon: <i class="fa-brands fa-instagram"></i>
+    link: https://www.instagram.com/cequintos/
+
+navigation:      
+  - name: Work Experience
+    link: ./index.html#work-experience
+  - name: Education and Training
+    link: ./index.html#education-and-training
+  - name: Language Skills
+    link: ./index.html#language-skills
+  - name: Digital Skills
+    link: ./index.html#digital-skills
