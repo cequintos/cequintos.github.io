@@ -2,7 +2,7 @@
 
 ### It Systems Technician
 
-[13/09/2021 - 04/03/2022]
+[13 Sep 2021 – 4 Mar 2022]
 
 [Hospital Quiron Salud](https://www.quironsalud.es/hospital-barcelona)
 
@@ -14,7 +14,7 @@ Collaboration in the planning, maintenance and proper functioning of the center'
 
 ### Computer Equipment Assembly and Maintenance Assistant
 
-[13/12/2019 - 04/03/2020]
+[13 Dec 2019 – 4 Mar 2020]
 
 [Institut Escola Tritinat Nova](https://agora.xtec.cat/ietn/)
 
@@ -28,7 +28,7 @@ Auxiliary operations of assembly and maintenance of microcomputer systems, perip
 
 ### Superior Technician in Network Computer Systems Administration
 
-[07/09/2022 - Current]
+[7 Sep 2022 – Current]
 
 [Institut Tecnològic de Barcelona](https://www.itb.cat/)
 
@@ -38,7 +38,7 @@ Security analysis and proposing solutions to detected cyberattacks, recognizing 
 
 ### Technician in Microcomputers Systems and Networks
 
-[13/09/2021 - 21/06/2022]
+[13 Sep 2021 – 21 Jun 2022]
 
 [Institut Tecnològic de Barcelona](https://www.itb.cat/)
 
@@ -48,7 +48,7 @@ Vocational Training, Secondary Education Cycle.
 
 ### Computer Equipment Assembly and Maintenance Assistant
 
-[09/09/2019 - 21/06/2020]
+[9 Sep 2019 – 21 Jun 2020]
 
 [Institut Tecnològic de Barcelona](https://www.itb.cat/)
 
