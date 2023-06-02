@@ -1,8 +1,18 @@
 ## Work Experience
 
+### Microcomputer Technician
+
+[ 1 Jun 2023 - Current ]
+
+[Grupo Sermicro](https://gruposermicro.com/)
+
+**Address:** [Gran Via de les Corts Catalanes, 130, 08014, Barcelona, Spain](https://goo.gl/maps/qCxjX8ecTs8MwdGMA)
+
+Telephone and in-person assistance for resolution of incidents in computer equipment.
+
 ### It Systems Technician
 
-[13 Sep 2021 – 4 Mar 2022]
+[ 13 Sep 2021 – 4 Mar 2022 ]
 
 [Hospital Quiron Salud](https://www.quironsalud.es/hospital-barcelona)
 
@@ -14,7 +24,7 @@ Collaboration in the planning, maintenance and proper functioning of the center'
 
 ### Computer Equipment Assembly and Maintenance Assistant
 
-[13 Dec 2019 – 4 Mar 2020]
+[ 13 Dec 2019 – 4 Mar 2020 ]
 
 [Institut Escola Tritinat Nova](https://agora.xtec.cat/ietn/)
 
@@ -28,7 +38,7 @@ Auxiliary operations of assembly and maintenance of microcomputer systems, perip
 
 ### Superior Technician in Network Computer Systems Administration
 
-[7 Sep 2022 – Current]
+[ 7 Sep 2022 – Current ]
 
 [Institut Tecnològic de Barcelona](https://www.itb.cat/)
 
@@ -38,7 +48,7 @@ Security analysis and proposing solutions to detected cyberattacks, recognizing 
 
 ### Technician in Microcomputers Systems and Networks
 
-[13 Sep 2021 – 21 Jun 2022]
+[ 13 Sep 2021 – 21 Jun 2022 ]
 
 [Institut Tecnològic de Barcelona](https://www.itb.cat/)
 
@@ -48,7 +58,7 @@ Vocational Training, Secondary Education Cycle.
 
 ### Computer Equipment Assembly and Maintenance Assistant
 
-[9 Sep 2019 – 21 Jun 2020]
+[ 9 Sep 2019 – 21 Jun 2020 ]
 
 [Institut Tecnològic de Barcelona](https://www.itb.cat/)
 
@@ -89,5 +99,5 @@ MySQL · Postgres SQL · MariaDB
 #### Others technologies
 
 ~~~
-Git · Samba / Active Directory · SaaS · Filezilla Server · Virtual Box · Ventoy · SSH · Clonezilla · Hiren's Boot · Gnome Boxes · Office
+Git · Samba / Active Directory · SaaS · Filezilla Server · Virtual Box · Ventoy · SSH · Clonezilla · Hiren's Boot · Gnome Boxes · Office · Sharepoint / OneDrive · Microsoft Intune Endpoint · Printer Management
 ~~~

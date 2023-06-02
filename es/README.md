@@ -89,5 +89,5 @@ MySQL · Postgres SQL · MariaDB
 #### Otras tecnologías
 
 ~~~
-Git · Samba / Active Directory · SaaS · Filezilla Server · Virtual Box · Ventoy · SSH · Clonezilla · Hiren's Boot · Gnome Boxes · Office
+Git · Samba / Active Directory · SaaS · Filezilla Server · Virtual Box · Ventoy · SSH · Clonezilla · Hiren's Boot · Gnome Boxes · Office · Sharepoint / OneDrive · Microsoft Intune Endpoint · Printer Management
 ~~~
