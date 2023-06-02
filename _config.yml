@@ -1,5 +1,5 @@
 title: Carlos Quintos Nores
-#logo: ./img/logo.jpg
+logo: ./img/logo.jpg
 email: 90f0ad@gmail.com
 lang: es-ES
 description: Technician in Networked Computer Systems Administration / CFPM IC10 / IFC361_1
@@ -8,9 +8,9 @@ color-scheme: auto
 remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 
 platforms:
-  - name: Resume
-    icon: <i class="fa-solid fa-file-lines"></i>
-    link: ./pdf/carlosquintos-cv.pdf
+#  - name: Resume
+#    icon: <i class="fa-solid fa-file-lines"></i>
+#    link: ./pdf/carlosquintos-cv.pdf
   - name: Gitlab
     icon: <i class="fa-brands fa-gitlab"></i>
     link: https://gitlab.com/cequintos/
