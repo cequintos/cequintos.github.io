@@ -17,9 +17,6 @@ platforms:
   - name: LinkedIn
     icon: <i class="fa-brands fa-linkedin"></i>
     link: https://www.linkedin.com/in/cequintos/
-  - name: Twitter
-    icon: <i class="fa-brands fa-twitter"></i>
-    link: https://twitter.com/cequintos/
   - name: Instagram
     icon: <i class="fa-brands fa-instagram"></i>
     link: https://www.instagram.com/cequintos/
