@@ -1,8 +1,18 @@
 ## Experiencia laboral
 
+### Técnico Microinformático
+
+[ 1 Jun 2023 - Actual ]
+
+[Grupo Sermicro](https://gruposermicro.com/)
+
+**Dirección:** [Gran Via de les Corts Catalanes, 130, 08014, Barcelona, España](https://goo.gl/maps/qCxjX8ecTs8MwdGMA)
+
+Asistencia telefónica y presencial para resolución de incidencias en equipos informáticos.
+
 ### Técnico en Sistemas TI
 
-[13 sep 2021 – 4 mar 2022]
+[ 13 sep 2021 – 4 mar 2022 ]
 
 [Hospital Quiron Salud](https://www.quironsalud.es/hospital-barcelona)
 
@@ -14,7 +24,7 @@ Colaboración en la planificación, mantenimiento y buen funcionamiento de los s
 
 ### Auxiliar de montaje y mantenimiento de equipos informáticos
 
-[13 dic 2019 – 4 mar 2020]
+[ 13 dic 2019 – 4 mar 2020 ]
 
 [Institut Escola Tritinat Nova](https://agora.xtec.cat/ietn/)
 
@@ -28,7 +38,7 @@ Operaciones auxiliares de montaje y mantenimiento de sistemas microinformáticos
 
 ### Técnico Superior en Administración de Sistemas Informáticos en Red
 
-[7 sep 2022 – Actual]
+[ 7 sep 2022 – Actual ]
 
 [Institut Tecnològic de Barcelona](https://www.itb.cat/)
 
@@ -38,7 +48,7 @@ Análisis de seguridad y propuesta de soluciones a los ciberataques detectados, 
 
 ### Técnico en sistemas microinformáticos y redes
 
-[13 sep 2021 – 21 jun 2022]
+[ 13 sep 2021 – 21 jun 2022 ]
 
 [Institut Tecnològic de Barcelona](https://www.itb.cat/)
 
@@ -48,7 +58,7 @@ Formación Profesional, Ciclo de Educación Secundaria.
 
 ### Auxiliar de montaje y mantenimiento de equipos informáticos
 
-[9 sep 2019 – 21 jun 2020]
+[ 9 sep 2019 – 21 jun 2020 ]
 
 [Institut Tecnològic de Barcelona](https://www.itb.cat/)
 
