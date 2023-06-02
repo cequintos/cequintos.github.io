@@ -1,4 +1,4 @@
-[Muestra esta página en Inglés](/)
+[Muestra esta página en Inglés](../)
 
 ## Experiencia laboral
 
