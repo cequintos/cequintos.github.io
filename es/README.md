@@ -1,4 +1,4 @@
-[Muestra esta página en Inglés](/README.md)
+[Muestra esta página en Inglés](/)
 
 ## Experiencia laboral
 
