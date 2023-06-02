@@ -1,3 +1,5 @@
+[Muestra esta página en Inglés](/README.md)
+
 ## Experiencia laboral
 
 ### Técnico Microinformático
