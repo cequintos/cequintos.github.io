@@ -4,7 +4,7 @@
 
 ### Microcomputer Technician
 
-[ 1 Jun 2023 - Current ]
+[ 1 Jun 2023 - 30 Jun 2023 ]
 
 [Grupo Sermicro](https://gruposermicro.com/)
 
@@ -101,5 +101,5 @@ MySQL · Postgres SQL · MariaDB
 #### Others technologies
 
 ~~~
-Git · Samba / Active Directory · SaaS · Filezilla Server · Virtual Box · Ventoy · SSH · Clonezilla · Hiren's Boot · Gnome Boxes · Office · Sharepoint / OneDrive · Microsoft Intune Endpoint · Printer Management
+Git · Samba / Active Directory · SaaS · Filezilla Server · Virtual Box · Ventoy · SSH · Clonezilla · Hiren's Boot · Gnome Boxes · Office · Sharepoint / OneDrive · Microsoft Intune Endpoint · Printer Management · Microsoft Office (Excel, Word, PowerPoint, Outlook, Teams, To Do)
 ~~~
