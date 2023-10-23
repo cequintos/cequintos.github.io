@@ -4,6 +4,12 @@
 
 ### Microcomputer Technician
 
+[ 17 Jul 2023 - Current ]
+
+[Lemon Computer SL.](https://www.lemon.es/)
+
+**Address:** [Av. Ciudad de Barcelona, 87 - 1º B](https://maps.app.goo.gl/Mm6En6wdbWw5LjM37)
+
 [ 1 Jun 2023 - 30 Jun 2023 ]
 
 [Grupo Sermicro](https://gruposermicro.com/)
