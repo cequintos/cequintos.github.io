@@ -1,5 +1,3 @@
-[Show this page in Spanish](/es/README.md)
-
 ## Work Experience
 
 ### Microcomputer Technician

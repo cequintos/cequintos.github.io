@@ -10,10 +10,7 @@ remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 platforms:
   - name: Resume
     icon: <i class="fa-solid fa-file-lines"></i>
-    link: ./pdf/CVen-CarlosQuintos.pdf
-  - name: Currículum
-    icon: <i class="fa-solid fa-file-lines"></i>
-    link: ./pdf/CVes-CarlosQuintos.pdf
+    link: ./pdf/CV-CarlosQuintos.pdf
   - name: Gitlab
     icon: <i class="fa-brands fa-gitlab"></i>
     link: https://gitlab.com/cequintos/
