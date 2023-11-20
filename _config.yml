@@ -11,15 +11,9 @@ platforms:
   - name: Resume
     icon: <i class="fa-solid fa-file-lines"></i>
     link: ./pdf/CV-CarlosQuintos.pdf
-  - name: Gitlab
-    icon: <i class="fa-brands fa-gitlab"></i>
-    link: https://gitlab.com/cequintos/
   - name: LinkedIn
     icon: <i class="fa-brands fa-linkedin"></i>
     link: https://www.linkedin.com/in/cequintos/
-  - name: Instagram
-    icon: <i class="fa-brands fa-instagram"></i>
-    link: https://www.instagram.com/cequintos/
 
 navigation:      
   - name: Work Experience
