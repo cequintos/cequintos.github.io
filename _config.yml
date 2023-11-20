@@ -5,7 +5,7 @@ lang: en-US
 description: Technician in Networked Computer Systems Administration / CFPM IC10 / IFC361_1
 favicon: true
 color-scheme: auto
-remote_theme: vaibhavvikas/jekyll-theme-minimalistic
+remote_theme: vszhub/not-pure-poole
 
 platforms:
   - name: Resume
