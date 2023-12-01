@@ -15,12 +15,12 @@ platforms:
     icon: <i class="fa-brands fa-linkedin"></i>
     link: https://www.linkedin.com/in/cequintos/
 
-navigation:      
+navigation:
+  - name: About Me
+    link: ./index.html
   - name: Work Experience
     link: ./work_experencie.html
   - name: Education and Training
     link: ./education_and_training.html
-  - name: Language Skills
-    link: ./index.html#language-skills
-  - name: Digital Skills
-    link: ./index.html#digital-skills
+  - name: Skills
+    link: ./skills.html
