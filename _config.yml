@@ -17,11 +17,9 @@ platforms:
 
 navigation:      
   - name: Work Experience
-    link: ./index.html#work-experience
-  - name: Work Experience
     link: ./work_experencie.html
   - name: Education and Training
-    link: ./index.html#education-and-training
+    link: ./education_and_training.html
   - name: Language Skills
     link: ./index.html#language-skills
   - name: Digital Skills
