@@ -10,4 +10,4 @@ I am currently a technician in network computer systems administration and I am 
 
 I was once a "distro hopper" (on Linux), I like playing with virtual machines, managing operating systems and learning about open source software.
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7029583893905178625" height="399" width="504" frameborder="0" allowfullscreen="" title="Publicación integrada"></iframe>
+<img src="https://media.licdn.com/dms/image/C4E22AQG0vSRtZBgBmg/feedshare-shrink_2048_1536/0/1675983403247?e=1704326400&v=beta&t=GZEFUJ9XOJtu5YEGxH7GULUHfTreYc10rSU-PMmg9u0" alt="Debian">
