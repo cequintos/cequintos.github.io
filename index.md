@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Work Experience
 
 ### Microcomputer Technician
