@@ -1,3 +1,8 @@
+---
+default: default
+permalink: /work_experencie
+---
+
 ## Work Experience
 
 ### Microcomputer Technician
