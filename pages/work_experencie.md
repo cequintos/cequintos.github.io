@@ -1,5 +1,5 @@
 ---
-default: default
+layout: default
 permalink: /work_experencie
 ---
 
