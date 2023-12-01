@@ -18,6 +18,8 @@ platforms:
 navigation:      
   - name: Work Experience
     link: ./index.html#work-experience
+  - name: Work Experience
+    link: ./work_experencie.html
   - name: Education and Training
     link: ./index.html#education-and-training
   - name: Language Skills
