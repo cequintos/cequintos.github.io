@@ -19,6 +19,8 @@ Software installation and update.
 
 Technical support for users and resolution of incidents.
 
+---
+
 [ 1 Jun 2023 - 30 Jun 2023 ]
 
 [Grupo Sermicro](https://gruposermicro.com/)
@@ -26,6 +28,8 @@ Technical support for users and resolution of incidents.
 **Address:** [Gran Via de les Corts Catalanes, 130, 08014, Barcelona, Spain](https://goo.gl/maps/qCxjX8ecTs8MwdGMA)
 
 Telephone and in-person assistance for resolution of incidents in computer equipment.
+
+---
 
 ### IT Systems Technician
 
