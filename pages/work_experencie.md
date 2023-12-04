@@ -3,11 +3,11 @@ layout: default
 permalink: /work_experencie
 ---
 
-## Work Experience
+# Work Experience
 
-### IT Services Technician
+## IT Services Technician
 
-[ 17 Jul 2023 - 12 Dec 2023 ]
+> [ 17 Jul 2023 - 12 Dec 2023 ]
 
 [Lemon Computer SL.](https://www.lemon.es/)
 
@@ -21,7 +21,9 @@ Technical support for users and resolution of incidents.
 
 ---
 
-[ 1 Jun 2023 - 30 Jun 2023 ]
+## IT Technician Onsite
+
+> [ 1 Jun 2023 - 30 Jun 2023 ]
 
 [Grupo Sermicro](https://gruposermicro.com/)
 
@@ -31,9 +33,9 @@ Telephone and in-person assistance for resolution of incidents in computer equip
 
 ---
 
-### IT Systems Technician
+## IT Systems Technician
 
-[ 13 Sep 2021 – 4 Mar 2022 ]
+> [ 13 Sep 2021 – 4 Mar 2022 ]
 
 [Hospital Quiron Salud](https://www.quironsalud.es/hospital-barcelona)
 
@@ -43,9 +45,11 @@ Telephone and in-person assistance for resolution of incidents in computer equip
 
 Collaboration in the planning, maintenance and proper functioning of the center's hardware and software systems to ensure proper functioning of the services/departments.
 
-### Computer Equipment Assembly and Maintenance Assistant
+---
 
-[ 13 Dec 2019 – 4 Mar 2020 ]
+## Computer Equipment Assembly and Maintenance Assistant
+
+> [ 13 Dec 2019 – 4 Mar 2020 ]
 
 [Institut Escola Tritinat Nova](https://agora.xtec.cat/ietn/)
 
