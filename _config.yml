@@ -11,9 +11,9 @@ platforms:
   - name: Resume
     icon: <i class="fa-solid fa-file-lines"></i>
     link: /assets/files/CV-CarlosQuintos.pdf
-  - name: Github
-    icon: <i class="fa-brands fa-github"></i>
-    link: https://github.com/cequintos/
+  - name: LinkedIn
+    icon: <i class="fa-brands fa-linkedin"></i>
+    link: https://www.linkedin.com/in/cequintos/
 
 navigation:
   - name: About Me
