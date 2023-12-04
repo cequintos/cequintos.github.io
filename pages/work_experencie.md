@@ -5,13 +5,19 @@ permalink: /work_experencie
 
 ## Work Experience
 
-### Microcomputer Technician
+### IT Services Technician
 
-[ 17 Jul 2023 - Current ]
+[ 17 Jul 2023 - 12 Dec 2023 ]
 
 [Lemon Computer SL.](https://www.lemon.es/)
 
 **Address:** [Av. Ciudad de Barcelona, 87 - 1º B](https://maps.app.goo.gl/Mm6En6wdbWw5LjM37)
+
+Installation, maintenance and control of computer, network and audiovisual equipment.
+
+Software installation and update.
+
+Technical support for users and resolution of incidents.
 
 [ 1 Jun 2023 - 30 Jun 2023 ]
 
@@ -21,7 +27,7 @@ permalink: /work_experencie
 
 Telephone and in-person assistance for resolution of incidents in computer equipment.
 
-### It Systems Technician
+### IT Systems Technician
 
 [ 13 Sep 2021 – 4 Mar 2022 ]
 
