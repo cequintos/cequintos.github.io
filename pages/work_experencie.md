@@ -3,9 +3,9 @@ layout: default
 permalink: /work_experencie
 ---
 
-# Work Experience
+## Work Experience
 
-## IT Services Technician
+### IT Services Technician
 
 > [ 17 Jul 2023 - 12 Dec 2023 ]
 
@@ -21,7 +21,7 @@ Technical support for users and resolution of incidents.
 
 ---
 
-## IT Technician Onsite
+### IT Technician Onsite
 
 > [ 1 Jun 2023 - 30 Jun 2023 ]
 
@@ -33,7 +33,7 @@ Telephone and in-person assistance for resolution of incidents in computer equip
 
 ---
 
-## IT Systems Technician
+### IT Systems Technician
 
 > [ 13 Sep 2021 – 4 Mar 2022 ]
 
@@ -47,7 +47,7 @@ Collaboration in the planning, maintenance and proper functioning of the center'
 
 ---
 
-## Computer Equipment Assembly and Maintenance Assistant
+### Computer Equipment Assembly and Maintenance Assistant
 
 > [ 13 Dec 2019 – 4 Mar 2020 ]
 
