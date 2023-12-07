@@ -10,7 +10,7 @@ remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 platforms:
   - name: Resume
     icon: <i class="fa-solid fa-file-lines"></i>
-    link: /assets/files/cv-carlosquintos.pdf
+    link: /assets/files/cv_carlosquintos.pdf
   - name: LinkedIn
     icon: <i class="fa-brands fa-linkedin"></i>
     link: https://www.linkedin.com/in/cequintos/
