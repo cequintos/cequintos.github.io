@@ -5,7 +5,7 @@ permalink: /education_and_training
 
 ## Education and Training
 
-### Superior Technician in Network Computer Systems Administration
+### Superior Technician in Administration of Computer Network Systems
 
 > [ 7 Sep 2022 – Current ]
 
@@ -13,7 +13,9 @@ permalink: /education_and_training
 
 **Address:** [Carrer d'Aiguablava, 121, Barcelona, Spain](https://g.page/itecbcn?share)
 
-Security analysis and proposing solutions to detected cyberattacks, recognizing their origin and reasons; define and implement secure operation for mobile and other (IoT) devices, and secure network services to ensure their security.
+- Implementation and administration of computer systems, management of local networks and configuration of network machinery to integrate communication equipment.
+- Protection against external threats, typing and evaluating to ensure the system, protection against loss of information to secure data.
+- Detection of system vulnerabilities to reduce risks and improve security of an organization.
 
 ---
 
@@ -25,11 +27,15 @@ Security analysis and proposing solutions to detected cyberattacks, recognizing 
 
 **Address:** [Carrer d'Aiguablava, 121, Barcelona, Spain](https://g.page/itecbcn?share)
 
-Vocational Training, Secondary Education Cycle.
+- Determine the logistics associated with installation, configuration and maintenance of microcomputer systems.
+- Configuration, computer networks and wiring installations.
+Operate with servers.
+- Install, configure and maintain multi-user services, applications and shared devices in a local networking environment.
+- Basic notions of programming languages.
 
 ---
 
-### Computer Equipment Assembly and Maintenance Assistant
+### Computer equipment assembly and maintenance auxiliary
 
 > [ 9 Sep 2019 – 21 Jun 2020 ]
 
@@ -37,4 +43,7 @@ Vocational Training, Secondary Education Cycle.
 
 **Address:** [Carrer d'Aiguablava, 121, Barcelona, Spain](https://g.page/itecbcn?share)
 
-Auxiliary operations of assembly and maintenance of microcomputer systems, peripherals and data communication networks.
+- Assembly and maintenance of computer systems and components.
+- Auxiliary operations for configuration and operation.
+- Installation and maintenance of networks for data transmission.
+
