@@ -2,7 +2,7 @@ title: Carlos Quintos Nores
 logo: /assets/img/logo.jpg
 email: 90f0ad@gmail.com
 lang: en-US
-description: Technician in Networked Computer Systems Administration / CFPM IC10 / IFC361_1
+description: Networked Computer Systems Administrator / CFPM IC10 / IFC361_1
 favicon: true
 color-scheme: auto
 remote_theme: vaibhavvikas/jekyll-theme-minimalistic
@@ -10,7 +10,7 @@ remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 platforms:
   - name: Resume
     icon: <i class="fa-solid fa-file-lines"></i>
-    link: /assets/files/CV-CarlosQuintos.pdf
+    link: /assets/files/cv-carlosquintos.pdf
   - name: LinkedIn
     icon: <i class="fa-brands fa-linkedin"></i>
     link: https://www.linkedin.com/in/cequintos/
