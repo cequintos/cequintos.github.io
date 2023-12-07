@@ -14,6 +14,5 @@ I was once a "distro hopper" (on Linux), I like playing with virtual machines, m
 
 You can contact me by writing to this [email](mailto:90f0ad@gmail.com) or get to know me more on my social networks.
 
-[![X](https://img.shields.io/badge/cequintos-x?style=flat-square&logo=x&logoColor=white&labelColor=black&color=black)](https://twitter.com/cequintos/)
 [![Telegram](https://img.shields.io/badge/cequintos-telegram?style=flat-square&logo=telegram&logoColor=white&labelColor=gray&color=gray)](https://t.me/cequintos)
 [![Instagram](https://img.shields.io/badge/cequintos-instagram?style=flat-square&logo=instagram&logoColor=white&labelColor=orange&color=orange)](https://www.instagram.com/cequintos/)
