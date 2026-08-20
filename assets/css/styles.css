@@ -1,207 +1,305 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+/* ==========================================================================
+   DESIGN TOKENS & VARIABLES (Inspirado en Arch / Hyprland / Terminal Retro)
+   ========================================================================== */
+:root {
+    /* Paleta de Colores Dark Retro-Tech */
+    --bg-primary: #0a0b10;
+    --bg-surface: #12131c;
+    --bg-surface-border: #1f2335;
 
-* {
-    box-sizing: border-box;
+    --text-primary: #c0caf5;
+    --text-muted: #565f89;
+    --accent-cyan: #7dcfff;
+    --accent-green: #73daca;
+    --accent-orange: #ff9e64;
+
+    /* UI Window Colors */
+    --win-close: #f7768e;
+    --win-min: #e0af68;
+    --win-max: #9ece6a;
+
+    /* Tipografía y Escala */
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-size-base: 1rem;
+    --line-height: 1.6;
+
+    /* Layout */
+    --max-width: 900px;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --transition-fast: 0.2s ease;
 }
 
-:root {
-    --secondary-color: #4eb3e2;
-    --color-chathams-blue-50: #f2f9fd;
-    --color-chathams-blue-100: #e3f1fb;
-    --color-chathams-blue-200: #c2e3f5;
-    --color-chathams-blue-300: #8bcdee;
-    --color-chathams-blue-500: #279ad0;
-    --color-chathams-blue-600: #187bb1;
-    --color-chathams-blue-700: #15638f;
-    --color-chathams-blue-800: #155376;
-    --color-chathams-blue-900: #174663;
-    --color-chathams-blue-950: #0f2d42;
+/* ==========================================================================
+   RESET & BASE STYLES
+   ========================================================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+
+    clip: rect(0, 0, 0, 0);
+
+    white-space: nowrap;
+
+    border: 0;
 }
 
 body {
-    font-family: "Pixelify Sans", sans-serif;
-    background: #000;
-    font-size: 16px;
-    color: #f0f0f0;
-    max-width: 960px;
-    line-height: 1.6;
-    letter-spacing: 0.02rem;
-    margin: auto;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-main {
-    margin: 1rem 0;
-    padding: 1rem;
+/* Accessible Skip Link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--accent-cyan);
+    color: var(--bg-primary);
+    padding: 8px;
+    z-index: 100;
+    transition: top var(--transition-fast);
 }
 
-a {
-    color: #f0f0f0;
+.skip-link:focus {
+    top: 0;
 }
 
-a:hover {
-    color: var(--secondary-color);
-}
-
-.active {
-    color: var(--secondary-color);
-}
-
-/* ===
-Starts
-=== */
 #stars {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
-    /* para que el fondo quede detrás del contenido */
-    background: black;
+    pointer-events: none;
 }
 
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
 
-/* ===
-Navbar
-=== */
+main {
+    flex: 1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* ==========================================================================
+   NAVBAR
+   ========================================================================== */
+.header {
+    border-bottom: 1px solid var(--bg-surface-border);
+    background-color: rgba(10, 11, 16, 0.85);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
 .navbar {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+}
+
+.navbar__prompt {
+    color: var(--accent-green);
+    font-weight: 700;
 }
 
 .navbar__links {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    list-style: none;
+    gap: 1.5rem;
 }
 
-/* ===
-Searchbar
-=== */
+.navbar__link {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
 
-.searchbar {
-    margin: 1rem auto;
+.navbar__link:hover,
+.navbar__link--active {
+    color: var(--accent-cyan);
+}
+
+/* ==========================================================================
+   COMPONENTE: TERMINAL WINDOW (ESTILO OBSIDIAN / HYPRLAND)
+   ========================================================================== */
+.terminal-window {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--bg-surface-border);
+    border-radius: var(--radius-md);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.terminal-window__header {
+    background-color: #16161e;
+    padding: 0.6rem 1rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    /*gap: 0.2rem;*/
+    border-bottom: 1px solid var(--bg-surface-border);
 }
 
-.searchbar__input {
-    background-color: #000;
-    color: var(--secondary-color);
-    border: 2px solid var(--secondary-color);
-    font-family: "Pixelify Sans", sans-serif;
-    padding: 0.3rem 0.4rem;
-    width: 200px;
+.terminal-window__buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 1rem;
 }
 
-.searchbar__input::placeholder {
-    color: var(--secondary-color);
+.btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
 }
 
-.button__img {
-    width: 16px;
+.btn--close {
+    background-color: var(--win-close);
 }
 
-.searchbar__button {
-    background-color: var(--secondary-color);
-    color: #000;
-    padding: 0.3rem 0.4rem;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
+.btn--minimize {
+    background-color: var(--win-min);
 }
 
-.searchbar__button:hover {
-    background-color: #f0f0f0;
+.btn--maximize {
+    background-color: var(--win-max);
 }
 
-/* ===
-Footer
-=== */
+.terminal-window__title {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
 
-.group3__container {
+.terminal-window__body {
+    padding: 1.5rem;
+}
+
+.log-entry {
+    margin-bottom: 1.5rem;
+    border-left: 2px solid var(--accent-cyan);
+    padding-left: 1rem;
+}
+
+.log-entry:last-child {
+    margin-bottom: 0;
+}
+
+.log-entry__timestamp {
+    display: block;
+    color: var(--accent-orange);
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.footer {
+    border-top: 1px solid var(--bg-surface-border);
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+.footer__container {
     display: flex;
     justify-content: space-between;
-    padding: 0 2rem;
+    align-items: center;
 }
 
-.social__links {
-    align-items: center;
+.footer__copy {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+.footer__links {
     display: flex;
+    list-style: none;
     gap: 1rem;
 }
 
-/* ===
-Downloads
-=== */
-
-.downloads {
-    margin: 1rem 0;
+.footer__link {
+    color: var(--text-muted);
+    text-decoration: none;
 }
 
-.downloads__title {
-    color: var(--secondary-color);
-    /*margin-bottom: 1rem;*/
+.footer__link:hover {
+    color: var(--accent-cyan);
 }
 
-.downloads__table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.downloads__row {
-    border-bottom: 0.5px solid #f0f0f0;
-}
-
-.downloads__cell {
-    text-align: center;
-}
-
-/* ===
-Media QWERY
-=== */
-
-@media (max-width: 600px) {
-    .navbar__links {
+/* Responsive Design */
+@media (max-width: 640px) {
+    .navbar {
         flex-direction: column;
+        gap: 1rem;
     }
 
-    .social__links {
+    .footer__container {
         flex-direction: column;
-    }
-
-    .downloads__table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    .downloads__cell {
-        padding: 0.4rem 0.6rem;
-    }
-
-    .downloads__title {
+        gap: 1rem;
         text-align: center;
     }
-
-    .group3__container {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
 }
 
-/* ===
-Group 1
-=== */
+/* ==========================================================================
+   HERO SECTION & ACCESSIBILITY EXTENSIONS
+   ========================================================================== */
+.hero {
+    margin-bottom: 2rem;
+}
 
-.group1__container {
-    background-color: var(--color-chathams-blue-800);
-    box-shadow: 6px 6px 0 var(--color-chathams-blue-950);
-    padding: 1rem;
-    margin: 2rem auto;
-    width: 90%;
+.hero__title {
+    font-size: 2rem;
+    color: var(--accent-cyan);
+    margin-bottom: 0.5rem;
+}
+
+.hero__subtitle {
+    color: var(--accent-green);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.hero__description {
+    color: var(--text-primary);
+    max-width: 600px;
+}
+
+/* Oculta animación de estrellas si el SO tiene activada la reducción de movimiento */
+@media (prefers-reduced-motion: reduce) {
+    #stars {
+        display: none;
+    }
 }

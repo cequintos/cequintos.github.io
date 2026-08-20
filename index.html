@@ -1,77 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Quintos | Linux & Open Source Enthusiast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/img/scripts.png">
+
+    <meta name="description" content="Personal website of Carlos Quintos. Scripts, guides, downloads & field engineering resources.">
+    <meta name="author" content="Carlos Quintos">
+    <meta property="og:title" content="Carlos Quintos | Field Engineer">
+    <meta property="og:type" content="website">
+    
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Home</title>
+    <script src="assets/js/stars.js" defer></script>
 </head>
 
 <body>
-    <canvas id="stars"></canvas>
-    <header>
-        <nav class="navbar">
-            <h1 class="navbar__title">Carlos Quintos' Website</h1>
-            <div class="navbar__links">
-                <a href="index.html" class="navbar__link active">Home</a>
-                <a href="guides.html" class="navbar__link">Guides</a>
-                <a href="scripts.html" class="navbar__link">Scripts</a>
-                <a href="resume.html" class="navbar__link">Resume</a>
-            </div>
+    <a href="#main-content" class="skip-link">Salta al contenido principal</a>
+    <canvas id="stars" aria-hidden="true"></canvas>
+
+    <div id="header-placeholder"></div>
+
+    <!-- <header class="header">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a href="index.html" class="navbar__brand" aria-label="Inicio">
+                <span class="navbar__prompt">sys@cequintos:~$</span>
+            </a>
+            <ul class="navbar__links">
+                <li><a href="index.html" class="navbar__link navbar__link--active" aria-current="page">Home</a></li>
+                <li><a href="guides.html" class="navbar__link">Guías</a></li>
+                <li><a href="scripts.html" class="navbar__link">Scripts</a></li>
+                <li><a href="resume.html" class="navbar__link">CV</a></li>
+
+            </ul>
         </nav>
-    </header>
-    <main>
-        <section class="group1">
-            <div class="group1__container">
-                <p class="group__description active">
-                    [ Fri Sep 26 14:48 UTC 2025 ]
-                </p>
-                <p class="group__description">
-                    ¡Hola bienvenid@!
-                </p>
-                <p class="group__description">
-                    Esta es mi página web donde alojaré mis scripts/guides/links que uso en el trabajo.
-                </p>
-                <p class="group__description">
-                    Iré publicando las updates de mis script al Gitlab enlazado en <a href="scripts.html">Scripts</a>.
-                </p>
-            </div>
-            <div class="group1__container">
-                <p class="group__description active">
-                    [ Tue Oct 7 12:45 UTC 2025 ]
-                </p>
-                <p class="group__description">
-                    ¡Hola!<br />
-                    He añadido scripts y drivers en la página de Scripts. Lo siguiente que añadiré serán "How to
-                    guides",
-                    pero aún tengo que decidir si como archivo, o como subpagina...
-                </p>
-            </div>
-            <div class="group1__container">
-                <p class="group__description active">
-                    [ Tue Oct 7 10:58 UTC 2025 ]
-                </p>
-                <p class="group__description">
-                    ¡Nuevo diseño añadido!<br />
-                    Ahora cada articulo queda separado dentro de una ventana estilo retro jeje como casi toda la web.
-                </p>
-            </div>
+    </header> -->
+
+    <main id="main-content" class="container">
+        <section class="hero">
+            <h1 class="hero__title">Carlos Quintos</h1>
+            <p class="hero__subtitle">Field Engineer · Linux & Open Source Enthusiast</p>
+            <p class="hero__description">
+                Scripts, documentación, guías técnicas, troubleshooting y recursos de ingeniería.
+            </p>
         </section>
-        <section class="group3">
-            <div class="group3__container">
-                <p class="group__description">
-                    © 2026 Carlos Quintos. Todos los derechos reservados.
-                </p>
-                <div class="social__links">
-                    <a href="https://www.instagram.com/cequintos/" class="social__link" target="_blank">Instagram</a>
-                    <a href="https://github.com/stool3252" class="social__link" target="_blank">Github</a>
-                    <a href="https://www.linkedin.com/in/retype5775" class="social__link" target="_blank">LinkedIn</a>
+
+        <section class="terminal-window" aria-label="Registro de actividad">
+            <div class="terminal-window__header">
+                <div class="terminal-window__buttons">
+                    <span class="btn btn--close"></span>
+                    <span class="btn btn--minimize"></span>
+                    <span class="btn btn--maximize"></span>
                 </div>
+                <span class="terminal-window__title">activity.log</span>
+            </div>
+            <div class="terminal-window__body">
+                <article class="log-entry">
+                    <time datetime="2025-09-26T14:48:00Z" class="log-entry__timestamp">[ 2025-09-26 14:48 UTC ]</time>
+                    <div class="log-entry__content">
+                        <p>¡Hola bienvenid@!</p>
+                        <p>Esta es mi página web donde alojaré mis scripts/guides/links que uso en el trabajo.</p>
+                        <p>
+                            Iré publicando las updates de mis script al Gitlab enlazado en <a
+                                href="scripts.html">Scripts</a>.
+                        </p>
+                    </div>
+                </article>
+                <article class="log-entry">
+                    <time datetime="2025-10-07T10:58:00Z" class="log-entry__timestamp">[ 2025-10-07 10:58 UTC ]</time>
+                    <div class="log-entry__content">
+                        <p>¡Hola!</p>
+                        <p>He añadido scripts y drivers en la página de Scripts. Lo siguiente que añadiré serán "How to
+                            guides",
+                            pero aún tengo que decidir si como archivo, o como subpagina...</p>
+                    </div>
+                </article>
+                <article class="log-entry">
+                    <time datetime="2025-10-07T10:58:00Z" class="log-entry__timestamp">[ 2025-10-07 10:58 UTC ]</time>
+                    <div class="log-entry__content">
+                        <p>¡Nuevo diseño añadido!</p>
+                        <p>Ahora cada articulo queda separado dentro de una ventana estilo retro jeje como casi toda la
+                            web.
+                        </p>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
-    <script src="assets/js/stars.js"></script>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__copy">&copy; 2026 Carlos Quintos. Todos los derechos reservados.</p>
+            <div class="footer__links">
+                <a href="https://github.com/stool3252" class="footer__link" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub">GitHub</a>
+                <a href="https://www.instagram.com/cequintos/" class="footer__link" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+                <a href="https://www.linkedin.com/in/retype5775" class="footer__link" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </footer> -->
+
+    <script src="assets/js/load-components.js" defer></script>
+
 </body>
 
 </html>
