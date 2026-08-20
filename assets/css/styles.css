@@ -303,3 +303,68 @@ main {
         display: none;
     }
 }
+
+/* ==========================================================================
+   FILE TABLE / INDEXER STYLES
+   ========================================================================== */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.file-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.file-table th,
+.file-table td {
+    padding: 0.65rem 0.8rem;
+    border-bottom: 1px solid var(--bg-surface-border);
+}
+
+.file-table th {
+    color: var(--accent-green);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.file-table td {
+    color: var(--text-primary);
+}
+
+.file-table tbody tr:hover {
+    background-color: rgba(31, 35, 53, 0.4);
+}
+
+.file-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.file-table__name {
+    font-weight: 700;
+}
+
+.file-table__name a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.file-table__name a:hover {
+    color: var(--accent-cyan);
+}
+
+.file-table__link {
+    color: var(--accent-cyan);
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.file-table__link:hover {
+    text-decoration: underline;
+}
