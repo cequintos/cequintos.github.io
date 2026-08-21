@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found | Carlos Quintos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/img/scripts.png">
+
+    <meta name="description" content="Página no encontrada - Error 404">
+    <meta name="author" content="Carlos Quintos">
+    <meta name="robots" content="noindex, follow">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/stars.js" defer></script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Salta al contenido principal</a>
+    <canvas id="stars" aria-hidden="true"></canvas>
+
+    <!-- Header dinámico -->
+    <div id="header-placeholder"></div>
+
+    <main id="main-content" class="container">
+        <section class="hero">
+            <h1 class="error-code">404</h1>
+            <p class="hero__subtitle">Error: Resource Not Found</p>
+        </section>
+
+        <!-- Ventana estilo Terminal -->
+        <section class="terminal-window" aria-label="Consola de error">
+            <div class="terminal-window__header">
+                <div class="terminal-window__buttons">
+                    <span class="btn btn--close"></span>
+                    <span class="btn btn--minimize"></span>
+                    <span class="btn btn--maximize"></span>
+                </div>
+                <span class="terminal-window__title">system@cequintos:~$ journalctl -u httpd</span>
+            </div>
+
+            <div class="terminal-window__body error-console">
+                <p class="error-console__line"><span class="error-console__prompt">[ERROR]</span> 404 HTTP_NOT_FOUND</p>
+                <p class="error-console__line">El recurso solicitado no existe o ha sido movido a otro directorio.</p>
+                
+                <div class="error-console__divider"></div>
+
+                <p class="error-console__line"><span class="error-console__prompt">sys@cequintos:~$</span> cd /home/user/</p>
+                <p class="error-console__line">Rutas sugeridas para regresar al sistema:</p>
+
+                <ul class="error-console__links">
+                    <li><a href="index.html" class="file-table__link">[ ~ ] Inicio</a></li>
+                    <li><a href="404.html" class="file-table__link">[ /guides ] Documentación y Guías</a></li>
+                    <li><a href="downloads.html" class="file-table__link">[ /downloads ] Indice de Descargas</a></li>
+                    <li><a href="404.html" class="file-table__link">[ /cv ] Curriculum Vitae</a></li>
+                </ul>
+
+                <div class="error-console__action">
+                    <a href="index.html" class="error-btn">&lt; Volver al Inicio /&gt;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer dinámico -->
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/load-components.js" defer></script>
+</body>
+
+</html>
