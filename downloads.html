@@ -11,8 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/img/scripts.png">
 
-    <meta name="description"
-        content="Directorio de scripts, automatizaciones y utilidades de ingeniería de Carlos Quintos.">
+    <meta name="description" content="Directorio de scripts, automatizaciones y utilidades de ingeniería de Carlos Quintos.">
     <meta name="author" content="Carlos Quintos">
     <meta property="og:title" content="Scripts & Recursos | Carlos Quintos">
     <meta property="og:type" content="website">
@@ -33,11 +32,11 @@
             <h1 class="hero__title">Index of /scripts</h1>
             <p class="hero__subtitle">Automatización, Herramientas & Scripting</p>
             <p class="hero__description">
-                Directorio público de scripts en Bash, Python y utilidades de automatización para ingeniería.
+                Directorio público de scripts en Bash, PowerShell, Python y utilidades de automatización.
             </p>
         </section>
 
-        <!-- Ventana estilo Terminal con Indexador de Archivos -->
+        <!-- Ventana estilo Terminal -->
         <section class="terminal-window" aria-label="Directorio de archivos y scripts">
             <div class="terminal-window__header">
                 <div class="terminal-window__buttons">
@@ -45,7 +44,7 @@
                     <span class="btn btn--minimize"></span>
                     <span class="btn btn--maximize"></span>
                 </div>
-                <span class="terminal-window__title">cequintos@sys:~/$ ls -la /scripts</span>
+                <span id="terminal-title" class="terminal-window__title">cequintos@sys:~/$ ls -la /downloads</span>
             </div>
 
             <div class="terminal-window__body">
@@ -59,43 +58,8 @@
                                 <th scope="col">Acción</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td class="file-table__name"><span aria-hidden="true">📁</span> <a href="#">bash/</a>
-                                </td>
-                                <td>2026-02-10 14:20</td>
-                                <td>-</td>
-                                <td><a href="#" class="file-table__link">[ Explorar ]</a></td>
-                            </tr>
-                            <tr>
-                                <td class="file-table__name"><span aria-hidden="true">📁</span> <a href="#">python/</a>
-                                </td>
-                                <td>2026-01-18 09:15</td>
-                                <td>-</td>
-                                <td><a href="#" class="file-table__link">[ Explorar ]</a></td>
-                            </tr>
-                            <tr>
-                                <td class="file-table__name"><span aria-hidden="true">📜</span> <a href="#"
-                                        target="_blank" rel="noopener noreferrer">setup_arch_hyprland.sh</a></td>
-                                <td>2026-02-12 18:45</td>
-                                <td>4.2 KB</td>
-                                <td><a href="#" class="file-table__link" download>[ Descargar ]</a></td>
-                            </tr>
-                            <tr>
-                                <td class="file-table__name"><span aria-hidden="true">📜</span> <a href="#"
-                                        target="_blank" rel="noopener noreferrer">network_troubleshoot.sh</a></td>
-                                <td>2026-01-29 11:02</td>
-                                <td>2.8 KB</td>
-                                <td><a href="#" class="file-table__link" download>[ Descargar ]</a></td>
-                            </tr>
-                            <tr>
-                                <td class="file-table__name"><span aria-hidden="true">🐍</span> <a href="#"
-                                        target="_blank" rel="noopener noreferrer">backup_rotation.py</a></td>
-                                <td>2025-11-04 16:30</td>
-                                <td>8.1 KB</td>
-                                <td><a href="#" class="file-table__link" download>[ Descargar ]</a></td>
-                            </tr>
-                        </tbody>
+                        <!-- Se llena dinámicamente desde file-indexer.js -->
+                        <tbody id="file-table-body"></tbody>
                     </table>
                 </div>
             </div>
@@ -106,6 +70,7 @@
     <div id="footer-placeholder"></div>
 
     <script src="assets/js/load-components.js" defer></script>
+    <script src="assets/js/file-indexer.js" defer></script>
 </body>
 
 </html>
