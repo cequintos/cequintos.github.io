@@ -8,9 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
         ],
         "/scripts": [
             { name: "apps-installer-online.ps1", type: "file", icon: "🐍", date: "2025-11-04 16:30", size: "8.1 KB", url: "downloads/scripts/apps-installer-online.ps1" },
-            { name: "buscar-serials.bat", type: "file", icon: "🐍", date: "2025-11-04 16:30", size: "8.1 KB", url: "downloads/scripts/buscar-serials.bat" },
-            { name: "map.ps1", type: "file", icon: "🐍", date: "2025-11-04 16:30", size: "8.1 KB", url: "downloads/scripts/map.ps1" },
-            { name: "pclc.ps1", type: "file", icon: "🐍", date: "2025-11-04 16:30", size: "8.1 KB", url: "downloads/scripts/pclc.ps1" },
             { name: "app-installer.bat", type: "file", icon: "🐍", date: "2025-11-04 16:30", size: "8.1 KB", url: "downloads/scripts/app-installer.bat" }
         ]
     };
