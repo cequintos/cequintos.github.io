@@ -9,8 +9,8 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
-set "SCRIPT_URL=https://github.com/stool3252/resources/releases/download/latest/apps-installer-online.ps1"
-set "SCRIPT_PATH=%TEMP%\apps-installer-online.ps1"
+set "SCRIPT_URL=https://github.com/cequintos/cequintos.github.io/blob/main/downloads/scripts/apps-installer.ps1"
+set "SCRIPT_PATH=%TEMP%\apps-installer.ps1"
 
 echo [INFO] Downloading script...
 powershell -Command "try { Invoke-WebRequest -Uri '%SCRIPT_URL%' -OutFile '%SCRIPT_PATH%' -UseBasicParsing } catch { exit 1 }"
