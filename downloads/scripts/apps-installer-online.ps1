@@ -32,7 +32,7 @@ $programs = @(
             "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe",
             "C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe"
         )
-        url          = "https://github.com/stool3252/resources/releases/download/Latest/Adobe.exe"
+        url          = "https://admdownload.adobe.com/rdcm/installers/live/readerdc64_a_hrmd_install.exe?filename=Reader_en_install.exe"
     }
 )
 
