@@ -1,6 +1,6 @@
 # --------------------------------------------------------------
 # Script made by Carlos Quintos - Unisys
-# Last update date: 2026-08-21
+# Last update date: 2026-09-01
 # Description: Software installer for Ivanti equipment at Henkel
 # --------------------------------------------------------------
 
@@ -17,14 +17,14 @@ $programs = @(
         url          = "https://okta.okta.com/artifacts/WINDOWS_OKTA_VERIFY/6.10.2.0/OktaVerifySetup-6.10.2.0-de20e9b.exe"
     },
     @{
-        name         = "system_update_5.08.04.85.exe"
+        name         = "system_update.exe"
         winget_id    = "Lenovo.SystemUpdate"
         options      = "/silent"
         installed_in = @("C:\Program Files (x86)\Lenovo\System Update\Tvsukernel.exe")
         url          = "https://download.lenovo.com/pccbbs/thinkvantage_en/system_update_5.08.04.85.exe"
     },
     @{
-        name         = "Adobe.exe"
+        name         = "AcrobatReaderDC.exe"
         winget_id    = "XPDP273C0XHQH2"
         options      = "/sAll"
         installed_in = @(
@@ -35,30 +35,6 @@ $programs = @(
         url          = "https://admdownload.adobe.com/rdcm/installers/live/readerdc64_a_hrmd_install.exe?filename=Reader_en_install.exe"
     }
 )
-
-$ivanti_tools = @(
-    @{
-        name    = "Inventory Scanner"
-        path    = "C:\Program Files (x86)\Ivanti\EPM Agent\Inventory\ldiscn32.exe"
-        param   = "/V"
-        process = "ldiscn32"
-    },
-    @{
-        name    = "Security Scanner"
-        path    = "C:\Program Files (x86)\Ivanti\EPM Agent\Patch Management\vulscan.exe"
-        param   = "/showui=true"
-        process = "vulscan"
-    }
-)
-
-$landesk = @{
-    zip_name  = "landesk.zip"
-    url       = "https://github.com/stool3252/resources/releases/download/Latest/landesk.zip"
-    zip_path  = Join-Path $temp_folder "landesk.zip"
-    extract   = Join-Path $temp_folder "landesk"
-    installer = "landesk\EPMAgentInstaller.exe"
-    options   = "/c DEDUSSV-IVAN3"
-}
 
 #endregion
 
@@ -124,7 +100,7 @@ function download_installer($url, $output_path) {
     }
 }
 
-function henkel_dependecies {
+function host_dependecies {
 
     $winget_available = has_winget
 
@@ -192,138 +168,80 @@ function henkel_dependecies {
     }
 }
 
-    function ivanti_launch {
-        foreach ($tool in $ivanti_tools) {
-            Write-Host -NoNewline "Launching $($tool.name)... "
-            if (its_running $tool.process) {
-                Write-Output "Skipped"
-            }
-            elseif (Test-Path $tool.path) {
-                run_tool $tool
-                Write-Output "Done"
-            }
-            else {
-                Write-Output "Not found"
-            }
-        }
-    }
-
-    function clean_temp {
-        Write-Host -NoNewline "Cleaning temporary folder... "
-        if (Test-Path $temp_folder) {
-            try {
-                Remove-Item -Path $temp_folder -Recurse -Force
-                Write-Output "Done"
-            }
-            catch {
-                Write-Output "Failed"
-            }
-        }
-        else {
-            Write-Output "Skipped"
-        }
-    }
-
-    function install_landesk {
-        create_temp_folder
-        Write-Host "`nInstalling Ivanti (Landesk)..."
-        Write-Host -NoNewline "Downloading package..."
-        if (-not (download_installer -url $landesk.url -output_path $landesk.zip_path)) {
-            Write-Output "Failed"
-            return
-        }
-        Write-Output "Done"
-
-        # Extraer
-        Write-Host -NoNewline "Extracting package..."
+function clean_temp {
+    Write-Host -NoNewline "Cleaning temporary folder... "
+    if (Test-Path $temp_folder) {
         try {
-            Expand-Archive `
-            -Path $landesk.zip_path `
-            -DestinationPath $landesk.extract `
-            -Force
-
+            Remove-Item -Path $temp_folder -Recurse -Force
             Write-Output "Done"
         }
         catch {
             Write-Output "Failed"
-            return
-        }
-        $installer = Join-Path $landesk.extract "EPMAgentInstaller.exe"
-        if (Test-Path $installer) {
-            Write-Host -NoNewline "Installing Ivanti Agent..."
-            try {
-                Start-Process `
-                -FilePath $installer `
-                -ArgumentList $landesk.options `
-                -Wait
-
-                Write-Host "Done"
-            }
-            catch {
-                Write-Host "Failed"
-            }
         }
     }
-
-    function has_winget {
-        return $null -ne (Get-Command winget -ErrorAction SilentlyContinue)
+    else {
+        Write-Output "Skipped"
     }
+}
 
-    function install_winget_package($packageId) {
-        try {
-            $process = Start-Process `
-                -FilePath "winget.exe" `
-                -ArgumentList @(
-                "install",
-                "`"$packageId`"",
-                "--silent",
-                "--accept-package-agreements",
-                "--accept-source-agreements",
-                "--disable-interactivity",
-                "--nowarn",
-                "--exact"
-            ) `
-                -Wait `
-                -PassThru `
-                -NoNewWindow
+function has_winget {
+    return $null -ne (Get-Command winget -ErrorAction SilentlyContinue)
+}
 
-            return ($process.ExitCode -eq 0)
-        }
-        catch {
+function install_winget_package($packageId) {
+    try {
+        $process = Start-Process `
+            -FilePath "winget.exe" `
+            -ArgumentList @(
+            "install",
+            "`"$packageId`"",
+            "--silent",
+            "--accept-package-agreements",
+            "--accept-source-agreements",
+            "--disable-interactivity",
+            "--nowarn",
+            "--exact"
+        ) `
+            -Wait `
+            -PassThru `
+            -NoNewWindow
+
+        return ($process.ExitCode -eq 0)
+    }
+    catch {
+        return $false
+    }
+}
+
+function update_winget_sources {
+    try {
+        winget source update | Out-Null
+    }
+    catch {}
+}
+
+function install_local_package($prog) {
+    create_temp_folder
+    $local_path = Join-Path $temp_folder $prog.name
+    if (-not (Test-Path $local_path)) {
+        if (-not (download_installer -url $prog.url -output_path $local_path)) {
             return $false
         }
     }
-
-    function update_winget_sources {
-        try {
-            winget source update | Out-Null
-        }
-        catch {}
-    }
-
-    function install_local_package($prog) {
-        create_temp_folder
-        $local_path = Join-Path $temp_folder $prog.name
-        if (-not (Test-Path $local_path)) {
-            if (-not (download_installer -url $prog.url -output_path $local_path)) {
-                return $false
-            }
-        }
     
-        run_program -path $local_path -options $prog.options
-        return (its_installed $prog.installed_in)
-    }
+    run_program -path $local_path -options $prog.options
+    return (its_installed $prog.installed_in)
+}
 
-    #endregion
+#endregion
 
-    #region ========= MAIN =========
+#region ========= MAIN =========
 
-    Clear-Host
-    fix_lang
-    henkel_dependecies
-    ivanti_launch
-    if (Test-Path $temp_folder) {
-        clean_temp
-    }
+Clear-Host
+fix_lang
+host_dependecies
+if (Test-Path $temp_folder) {
+    clean_temp
+}
 
-    #endregion
+#endregion
