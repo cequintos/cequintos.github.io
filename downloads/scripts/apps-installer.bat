@@ -9,7 +9,7 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
-set "SCRIPT_URL=https://github.com/cequintos/cequintos.github.io/blob/main/downloads/scripts/apps-installer.ps1"
+set "SCRIPT_URL=https://raw.githubusercontent.com/cequintos/cequintos.github.io/main/downloads/scripts/apps-installer.ps1"
 set "SCRIPT_PATH=%TEMP%\apps-installer.ps1"
 
 echo [INFO] Downloading script...
